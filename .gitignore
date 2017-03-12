@@ -21,4 +21,5 @@
 .byebug_history
 
 # Ignore node modules
-/node_modules/*
+/node_modules
+/vendor/assets/javascripts/dist
