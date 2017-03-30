@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Children2Component extends React.Component {
+export default class NotFound extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -8,7 +8,7 @@ export default class Children2Component extends React.Component {
   render() {
     return (
       <div>
-        <h2>Children2 Component</h2>
+        <h2>NOT FOUND</h2>
       </div>
     )
   }

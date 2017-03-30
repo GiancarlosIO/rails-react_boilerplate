@@ -2,7 +2,7 @@ import React from 'react';
 
 import NavComponent from './nav.component'
 
-export default class AppComponent extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,7 +12,7 @@ export default class AppComponent extends React.Component {
       <div>
         <NavComponent />
         <div>
-          {this.props.children}
+          APP Component
         </div>
       </div>
     )

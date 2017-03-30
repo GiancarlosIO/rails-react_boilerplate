@@ -1,18 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Route, Router, IndexRoute, browserHistory} from 'react-router';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import ReduxThunk from 'redux-thunk';
 
-import AppComponent from './components/app.component';
-import Children1Component from "./components/children1.component";
-import Children2Component from "./components/children2.component";
+// routes
+import Routes from './routes';
 
-$(document).on('ready', () => {
+// reducers
+import storeConfig from './reducers/';
+
+// store
+const storeWithMiddleware = applyMiddleware(
+  ReduxThunk
+)(createStore);
+const store = storeWithMiddleware(storeConfig);
+
+document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Router history={browserHistory}>
-    <Route path="/" component={AppComponent}>
-      <IndexRoute component={Children1Component}></IndexRoute>
-      <Route path="children2" component={Children2Component}></Route>
-    </Route>
-  </Router>,
+    <Provider store={store}>
+      { Routes }
+    </Provider>,
   document.getElementById('app-wrapper'))
 });
