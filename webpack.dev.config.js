@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  devtool: 'inline-source-map', //just do inline source maps instead of the default
+  devtool: 'inline-source-map',
   entry: [
     path.resolve(__dirname, 'vendor/assets/javascripts/src') + '/app/index.js'
   ],

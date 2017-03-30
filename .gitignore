@@ -22,5 +22,5 @@
 
 # Ignore node modules
 /node_modules
-/vendor/assets/javascripts/dist
+/vendor/assets/javascripts/dist/
 /.vscode/

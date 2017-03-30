@@ -25,6 +25,6 @@
   
 * Commands
 
-  $ npm start => run webpack -w
+  $ npm run dev => run webpack -w
   
   $ npm test => run the tests suit
