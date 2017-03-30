@@ -6,10 +6,10 @@ module.exports = function(config) {
     singleRun: true,
     frameworks: ['mocha'],
     files: [
-      'vendor/assets/javascripts/src/app/tests/**/*.js'
+      'vendor/assets/javascripts/src/tests/**/*.js'
     ],
     preprocessors: {
-      'vendor/assets/javascripts/src/app/tests/**/*.js': ['webpack', 'sourcemap']
+      'vendor/assets/javascripts/src/tests/**/*.js': ['webpack', 'sourcemap']
     },
     reporters: ['mocha'],
     client: {
