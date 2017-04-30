@@ -1,5 +1,6 @@
 # README
-
+- Rails 5.0
+- All files are inside the vendor folder
 * Packages supported
   - Development
     - React
